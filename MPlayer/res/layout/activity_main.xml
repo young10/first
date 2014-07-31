@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="8dip"
+    android:background="@drawable/music_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="359dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/music_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:gravity="right"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/previousBtn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="60dip"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@+id/music_info"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/pre"
+            android:scaleType="fitXY"
+            android:src="@drawable/pre" />
+
+        <ImageButton
+            android:id="@+id/playBtn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="15dip"
+            android:layout_toRightOf="@+id/previousBtn"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/play"
+            android:scaleType="fitXY"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:id="@+id/nextBtn"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="15dip"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/next"
+            android:scaleType="fitXY"
+            android:src="@drawable/next" />
+    </LinearLayout>
+
+</LinearLayout>
